@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#a3488b"
+            android:scrollbars="horizontal"
+            app:logo="@android:drawable/btn_star"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="PROSOFT" />
+
+        <TabHost
+            android:id="@+id/xm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/odoo"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/crop"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="197dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Prix"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                            <EditText
+                                android:id="@+id/editprix"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtcompanyid"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Company"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                            <ExpandableListView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnaddproductx"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/btnpls" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/crop"
+                        android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/ean13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Ean13"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/editean13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="32dp"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ean13"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/crop"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/txtref"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Referance"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/editref"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="150dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/txttype"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="type"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <ExpandableListView
+                                android:id="@+id/selecttype"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="150dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/txtproductname"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Product name"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/editproductname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="150dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/txtdiscription"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="discription"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/editdiscription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="150dp"
+                                android:ems="10"
+                                android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.constraint.ConstraintLayout>
